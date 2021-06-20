@@ -1,73 +1,52 @@
-@import url(http://fonts.googleapis.com/css?family=Anaheim);
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 *{
-    margin : 0px;
-    padding : 0px;
-    box-sizing: border-box;
+	margin : 0px;
+	padding : 0px;
+	box-sizing: border-box;
 }
 
 body{
-    font-family: sans-serif;
-    min-height: 100vh;
+	font-family: sans-serif;
+	min-height: 100vh;
+
 }
 
 .navbar{
-    width : 100%;
-    font-family: sans-serif;
-    padding : 15px 0;
-    overflow: hidden;
-    position: fixed;
+	margin: 0px;
+	padding-top: 0px;
+	/*padding-bottom: 15px;*/
+	width :100%;
+	font-family: sans-serif, lobster;
 }
 
 .navbar .navbar-brand{
-    color : green;
-    font-size : 21px;
-    font-weight : 600;
+	margin-top: 20px;
+	font-size: 22px;
+	font-weight: 600;
+	color : green;
+}
+
+.navbar ul{
+
 }
 
 .navbar ul li{
-    list-style: none;
-    display: inline-block;
+	list-style: none;
 }
 
 .navbar ul li a{
-    color : black;
-    font-size : 18px;
-    font-weight : 600;
-    margin-left : 25px;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 600;
+	padding-left: 1rem ;
+	margin-left: 25px;
+	margin-bottom: 20px;
 }
-
 .navbar ul li a:hover{
-    background-color:  green;
+	background-color: green;
 }
-.Heading{
-    font-family: sans-serif;
-    text-align: center;
-    justify-content: center;
-}
-
-#about-para{
-    font-weight: 600;
-    margin-top: 50px;
-}
-
-#about-para p{
-    margin-left: 5px;
-}
-
-#importance-of-qurbani{
-    margin-top : 50px;
-}
-
-#importance-of-qurbani h1{
-    text-align: center;
-}
-#importance-of-qurbani p{
-    font-family: sans-serif;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-weight: 500;
-}
-
 .float{
     position:fixed;
     width:60px;
@@ -87,145 +66,257 @@ body{
     margin-top:16px;
 }
 
-#contact-us{
-    position : relative;
-    min-height: 100vh;
-    padding : 50px 100px;
-    display : flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: lightskyblue;
+#slider {
+	margin-top: 30px;
 }
 
-#contact-us .content{
+.carouselExampleIndicators{
+	padding: 1rem;
+}
+.carousel-item img{
+	max-width: 100%;
+}
+
+#about{
+	margin-top: 50px;
+}
+
+#about .Heading{
+	
+	text-align: center;
+}
+
+#about img{
+	margin-top: 35px;
+	max-width: 100%; 
+	height: auto;
+}
+.about-me{
+	font-weight: 600;
+}
+
+#importance-of-qurbani {
+	padding: 1rem;
+}
+
+#importance-of-qurbani h1{
+	text-align: center;
+}
+
+
+#importance-of-qurbani h1,p,ul{
+	margin-top: 30px;
+}
+
+#gallery img{
+	width : 350px;
+	height : 276px;
+	padding: 1rem;
+	border-radius: 30px;
+}
+
+#gallery iframe{
+	width : 315px;
+	height : 276px;
+	margin-left: 5px;
+	border-radius: 30px;
+}
+.img-gal{
+	margin-top: 50px;
+}
+
+#gallery h1{
+	margin-top: 50px;
+}
+#gallery .video-gal{
+	margin-top: 50px;
+}
+
+#vg{
+	text-align: center;
+}
+
+#contact-us .contact-page{
+  width: 100%;
+  max-width: 1400px;
+  padding: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#contact-us h2{
+  width: 100%;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 60px;
+}
+
+#contact-us .contact-info, .contact-form{
+  flex: 1;
+}
+
+#contact-us .item{
+  margin-bottom: 24px;
+  font-size: 16px;
+  color: #000;
+}
+
+#contact-us .icon{
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-color: green;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+#contact-us .contact-form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#contact-us .textb{
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  background-color: #222;
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#contact-us textarea{
+  width: 100%;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  padding: 12px;
+  background-color: #222;
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#contact-us .btn{
+  width: 120px;
+  height: 40px;
+  margin-left: auto;
+  background-color: #3494db;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid #3494db;
+  transition: .3s linear;
+}
+
+#contact-us .btn:hover{
+  background-color: transparent;
+  color: #3494db;
+}
+ 	
+@media screen and (max-width: 980px){
+ #contact-us .contact-page{
     max-width: 800px;
-    text-align: center;
+  }
+ #contact-us h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+#contact-us .contact-info, .contact-form{
+    flex: 100%;
+    margin-bottom: 30px;
+  }
+#contact-us  .textb{
+    width: 100%;
+  }
 }
 
-#contact-us .content h2{
-    font-size : 36px;
-    font-weight: 500;
+
+@media only screen and (max-width : 600px){
+	.navbar .navbar-brand{
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	#slider{
+		margin-top: 30px;
+	}
+	
+	#about{
+		flex: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	#about img{
+	min-width: 100%;
+	float: left;
+
+	}
+	#about .Heading{
+		font-size: 20px;
+		text-align: center;
+		font-weight: 600;
+	}
+
+#be-naziramal{
+	margin-top: 20px;
+	padding: 1rem;
 }
 
-#contact-us .container{
-    width : 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
+#be-naziramal img{
+	margin-top: 20px;
 }
+	#importance-of-qurbani h1{
+		font-size: 25px;
+		text-align: center;
+		font-weight: 600;
+	}
 
-#contact-us .container .contactInfo{
-    width : 50%;
-    display : flex;
-    flex-direction: column;
-}
+	#importance-of-qurbani ul{
+		margin-left: 30px;
+	}
 
-#contact-us .container .contactInfo .box{
-    position: relative;
-    padding: 20px 0;
-    display: flex;
-}
+	#gallery{
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
 
-#contact-us .container .contactInfo .box .icon{
-    min-width: 60px;
-    height: 60px;
-    display: flex;
-    background: #fff;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 22px;
-}
+	#gallery .img-gal{
+		align-items: center;
+		justify-content: center;
+		margin-left: 60px;
+	}
 
-#contact-us .container .contactInfo .box .text{
-    display : flex;
-    margin-left: 20px;
-    font-size : 16px;
-    flex-direction: column;
-    font-weight : 300;
-}
+	#vg{
+		text-align: center;
+		justify-content: center;
+	}
 
-#contact-us .container .contactInfo .box .text h3{
-    font-weight: 500;
-}
-
-.contactForm{
-    width : 40%;
-    padding : 40px;
-}
-
-.contactForm h2{
-    font-size: 30px;
-    color : #333;
-    font-weight : 500;
-}
-
-.contactForm .inputBox{
-    position: relative;
-    width : 100%;
-    margin-top: 10px;
-}
-
-.contactForm .inputBox input,
-.contactForm .inputBox textarea
- {
-    width : 100%;
-    padding: 5px 0;
-    font-size: 16px;
-    margin : 10px 0;
-    border : none;
-    border-bottom : 2px solid #333;
-    outline : none;
-}
-
-.contactForm .inputBox span{
-    position: absolute;
-    left : 0;
-    padding  : 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    pointer-events : none;
-    transition: 0.5s;
-    color : #666;
-}
-
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span
-{
-    color:  #e91e63;
-    font-size: 12px;
-    transform : translateY(-20px);
-
-} 
-
-.contactForm .inputBox input[type="submit"]{
-    width : 100px;
-    background : #00bcd4;
-    color : #fff;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
-}
-
-@media (max-width : 991px)
-{
-    #contact-us{
-        padding: 50px;
-    }
-    #contact-us .container{
-        flex-direction: column;
-
-    }
-    #contact-us .contactInfo{
-        margin-bottom:40px;
-    }
-    #contact-us .contactInfo, .contactForm{
-        width : 100%;
-    }
-
+	#gallery .video-gal{
+		align-items: center;
+		justify-content: center;
+		margin-left: 60px;
+	}
+	#sticky-footer{
+		min-width: 600px;
+		width:  33%;
+		float: left;
+		display:block;
+    color:black; 
+    padding:0px;
+    margin: 0px;
+	} 
 }
