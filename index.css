@@ -336,6 +336,7 @@ body{
 	#gallery .img-gal{
 		align-items: center;
 		justify-content: center;
+		margin-right:30px
 	}
 
 	#vg{
@@ -346,6 +347,7 @@ body{
 	#gallery .video-gal{
 		align-items: center;
 		justify-content: center;
+		margin-right: 30px
 	}
 	
 }
