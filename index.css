@@ -344,7 +344,7 @@ body{
 		justify-content: center;
 	}
 
-	#gallery .video-gal{
+	#gallery .video-gal iframe{
 		align-items: center;
 		justify-content: center;
 		margin-right: 80px
