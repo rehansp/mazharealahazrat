@@ -310,13 +310,44 @@ body{
 		justify-content: center;
 		margin-left: 60px;
 	}
+	
+	
 	#sticky-footer{
 		min-width: 600px;
 		width:  33%;
 		float: left;
 		display:block;
-    color:black; 
-    padding:0px;
-    margin: 0px;
+		color:black; 
+		padding:0px;
+		margin: 0px;
 	} 
+}
+
+@media only screen and (max-width : 480px){
+#gallery{
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	#gallery .img-gal{
+		align-items: center;
+		justify-content: center;
+		margin-left: 60px;
+	}
+
+	#vg{
+		text-align: center;
+		justify-content: center;
+	}
+
+	#gallery .video-gal{
+		align-items: center;
+		justify-content: center;
+		margin-left: 60px;
+	}
+	
 }
