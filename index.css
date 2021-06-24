@@ -281,11 +281,11 @@ body{
 
 
 @media only screen and (max-width : 600px){
-	.navbar .navbar-brand{
+/* 	.navbar .navbar-brand{
 		font-size: 18px;
 		font-weight: bold;
 		text-align: center;
-	}
+	} */
 
 	#slider{
 		margin-top: 30px;
@@ -336,9 +336,9 @@ body{
 
 
 @media only screen and (max-width : 700px){
-	.navbar ul li{
+/* 	.navbar ul li{
 		display: block;
-	}
+	} */
 
 	.about-img img{
 		width : 50%;
