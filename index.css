@@ -232,6 +232,35 @@ body{
   color: #3494db;
 }
 
+@media (max-width : 400px){
+	.navbar-toggler{
+		display: flex;
+	}
+	.navbar{
+		display : none;
+		width : 100%;
+	}
+
+	.navbar{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.navbar ul{
+		width : 100%;
+		flex-direction: column;
+	}
+
+	.navbar ul li{
+		text-align: center;
+	}
+
+	.navbar ul li a{
+		padding: .5rem 1rem;
+	}
+
+}
+
 
 @media screen and (max-width: 980px){
  #contact-us .contact-page{
