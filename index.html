@@ -11,11 +11,11 @@
             
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
              
-             <link rel="stylesheet" type="text/css" href="index.css">
+             <link rel="stylesheet" type="text/css" href="style.css">
 
         </head>
         <body> 
-             <a href="https://api.whatsapp.com/send?phone=+917861088786&text=Hey,there" class="float" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=+917861088786&text=Hey,there" class="float" target="_blank">
                 <i class="fab fa-whatsapp my-float"></i>
             </a>
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -54,13 +54,13 @@
                   </ol>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src="qurbani_hissa.jpeg" class="d-block w-100" alt="...">
+                      <img src="images/qurbani_hissa.jpeg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                      <img src="qurbani_content4.jpg" class="d-block w-100" alt="...">
+                      <img src="images/qurbani_content4.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                      <img src="qurbani_content2.jpg" class="d-block w-100" alt="...">
+                      <img src="images/qurbani_content2.jpg" class="d-block w-100" alt="...">
                     </div>
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -81,7 +81,9 @@
                     </h1>
                     <div class = "row">
                         <div class = "col">
-                            <img src="WhatsApp Image 2021-05-28 at 9.41.50 PM.jpeg">
+                            <div class = "about-img">
+                                <img src="images/WhatsApp_Image.jpeg">
+                            </div>
                         </div>
                         <div class = "col-8 about-me">
                             <p>
@@ -103,7 +105,7 @@
 
             <section id = "be-naziramal">
                         <h1 style="text-align : center">BE-NAZIR AMAL</h1>
-                        <img style = "margin-top: 20px;max-width: 100%;"  src="32146.jpg">
+                        <img style = "margin-top: 20px;max-width: 100%;"  src="images/32146.jpg">
             </section>
 
             <section id = "importance-of-qurbani">
@@ -118,7 +120,6 @@
                      <p>
                         When a person slaughters a Qurbani animal, he is forgiven at the fall of the first drop of blood, and verily, the animal shall be brought forward on the Day of Judgment with its blood, meat etc, and shall be increased in weight seventy times more than its own weight, and thereafter it will be placed on the scale of deeds. (Kanzul'Ummal)
                     </p>
-                    
                      <h1>What is Qurbani?</h1>
                      <p>
                         Qurbani is an annual tradition for Muslims across the world and involves an animal sacrifice in recognition of the Prophet Ibrahim’s own willingness to sacrifice his son for the will of Allah (SWT). At the last moment, Allah (SWT) replaced Ibrahim’s son with a ram, saving his life and rewarding Ibrahim’s devotion. That is why Muslims pay Qurbani and in doing so, we also help impoverished families and communities receive their share. 
@@ -216,11 +217,7 @@
                     </ul>
 
                      <div style = "margin-top: 30px;">
-                        <img src="Untitled-1.jpg" style = "max-width: 100%;">
-                    </div>
-                    
-                    <div style = "margin-top: 30px; margin-left : 30px;align-items : center; justify-content:center;">
-                        <img src="Qurbani_card.jpeg" style = "max-width: 100%;">
+                        <img src="images/Untitled-1.jpg" style = "max-width: 100%;">
                     </div>
 
                     <h1>Method Of Sacrifice</h1>
@@ -304,715 +301,809 @@
                 </div>
             </section>
 
-
-            <section id = "gallery">
+            <section class = "image-gallery min-vh-100">
                    <h1 style = "text-align: center;">Our Gallery</h1>
-                <div class = "img-gal container-fluid">
-                    <div class="row">   
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop1">
-                                <img src="One.jpeg">
-                            </a>
-                            <div class="modal fade" id="staticBackdrop1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="One.jpeg" style="width:100%;height: auto;">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
+                   <div class = "container-fluid-lg" style="margin-top : 50px">
+                       <div class = "row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <!-- Button trigger modal -->
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal1">
+                                      <img src="images/One.jpeg" width = "300px" height="300px">
+                                    </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body">
+                                            <img src="images/One.jpeg" style="width : 100%;">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal2">
+                                            <img src="images/Two.jpeg" width = "300px" height="300px">
+                                        </a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Two.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                            
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal3">
+                                            <img src="images/Three.jpeg" width = "300px" height="300px">
+                                        </a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Three.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
+                            </div>
+
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal4">
+                                            <img src="images/Four.jpeg" width = "300px" height="300px">
+                                        </a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Four.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>    
                             </div>
                         </div>
 
-                        <div class = "col-md-3">
-                           <a href = "#" data-toggle="modal" data-target="#staticBackdrop2">
-                                <img src="Two.jpeg">
-                            </a>
+                        <div class = "row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                            <div class="col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal5">
+                                            <img src="images/Five.jpeg" width = "300px" height="300px">
+                                        </a>
 
-                            <div class="modal fade" id="staticBackdrop2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Two.jpeg" style="width:100%;height: auto;">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Five.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
+                            </div>
+
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal6">
+                                            <img src="images/Six.jpeg" width = "300px" height="300px">
+                                        </a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Six.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal7">
+                                            <img src="images/Seven.jpeg" width = "300px" height="300px">
+                                        </a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Seven.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                            
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal8">
+                                            <img src="images/Eight.jpeg" width = "300px" height="300px">
+                                        </a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Eight.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal9">
+                                            <img src="images/Nine.jpeg" width = "300px" height="300px">
+                                        </a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Nine.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                            
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal10">
+                                            <img src="images/Ten.jpeg" width = "300px" height="300px">
+                                        </a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Ten.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal11">
+                                            <img src="images/Eleven.jpeg" width = "300px" height="300px">
+                                        </a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Eleven.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                            
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal12">
+                                            <img src="images/Twelve.jpeg" width = "300px" height="300px">
+                                        </a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Twelve.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>    
                             </div>
                         </div>
 
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop3">
-                                <img src="Three.jpeg">
-                            </a>
+                        <div class = "row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal13">
+                                            <img src="images/Thirteen.jpeg" width = "300px" height="300px">
+                                        </a>
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop3" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Three.jpeg" style="width:100%;height: auto;">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Thirteen.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                        </div>                    
 
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop4">
-                                <img src="Four.jpeg">
-                            </a>
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal14">
+                                            <img src="images/One.jpeg" width = "300px" height="300px">
+                                        </a>
 
-                            <div class="modal fade" id="staticBackdrop4" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Four.jpeg" style="width:100%;height: auto;">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/One.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                        </div>
-                    </div>
+                            
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal15">
+                                            <img src="images/Fifteeen.jpeg" width = "300px" height="300px">
+                                        </a>
 
-                     <div class="row">   
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop5">
-                                <img src="Five.jpeg">
-                            </a>
-                            <div class="modal fade" id="staticBackdrop5" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Five.jpeg" style="width:100%;height: auto">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Fifteeen.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                        </div>
+                            
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal16">
+                                            <img src="images/Sixteen.jpeg" width = "300px" height="300px">
+                                        </a>
 
-                        <div class = "col-md-3">
-                           <a href = "#" data-toggle="modal" data-target="#staticBackdrop6">
-                                <img src="Six.jpeg">
-                            </a>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop6" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Six.jpeg" style="width:100%;height: auto">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Sixteen.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop7">
-                                <img src="Seven.jpeg">
-                            </a>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop7" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Seven.jpeg" style="width:100%;height: auto;">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                        </div>                    
-
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop8">
-                                <img src="Eight.jpeg">
-                            </a>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop8" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Eight.jpeg" style="width:100%;height: auto;">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop9">
-                                <img src="Nine.jpeg">
-                            </a>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop9" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Nine.jpeg" style="width:100%;height: auto">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
                             </div>
                         </div>
 
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop10">
-                                <img src="Ten.jpeg">
-                            </a>
+                        <div class = "row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal17">
+                                            <img src="images/Seventeen.jpeg" width = "300px" height="300px">
+                                        </a>
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop10" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Ten.jpeg" style="width:100%;height: auto">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal17" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Seventeen.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                        </div>
+                            
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal18">
+                                            <img src="images/Eighteen.jpeg" width = "300px" height="300px">
+                                        </a>
 
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop11">
-                                <img src="Eleven.jpeg">
-                            </a>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop11" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Eleven.jpeg" style="width:100%;height: auto">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal18" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Eighteen.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
+                            </div>
+                            
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal19">
+                                            <img src="images/Nineteen.jpeg" width = "300px" height="300px">
+                                        </a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal19" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Nineteen.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal20">
+                                            <img src="images/Twenty.jpeg" width = "300px" height="300px">
+                                        </a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal20" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Twenty.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop12">
-                                <img src="Twelve.jpeg">
-                            </a>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop12" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Twelve.jpeg" style="width:100%;height: auto">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row">
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop13">
-                                <img src="Thirteen.jpeg">
-                            </a>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop13" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Thirteen.jpeg" style="width:100%;height: auto">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                        </div>
-
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop14">
-                                <img src="Fourteen.jpeg">
-                            </a>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop14" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Fourteen.jpeg" style="width:100%;height: auto">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                        </div>
-
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop15">
-                                <img src="Fifteeen.jpeg" style="width:100%;">
-                            </a>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop15" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Fifteeen.jpeg" style="width:100%; height: auto">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                        </div>
-
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop16">
-                                <img src="Sixteen.jpeg">
-                            </a>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop16" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                <img src="Sixteen.jpeg" style="width:100%;height: auto;">
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              </div>
-                            </div>
-                            </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop17">
-                                <img src="Seventeen.jpeg">
-                            </a>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop17" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Seventeen.jpeg" style="width:100%;height: auto;">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                        </div>
-
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop18">
-                                <img src="Eighteen.jpeg">
-                            </a>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop18" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Eighteen.jpeg" style="width:100%;height: auto">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                        </div>
-
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop19">
-                                <img src="Nineteen.jpeg">
-                            </a>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop19" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Nineteen.jpeg" style="max-width:100%;height: auto">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                        </div>
-
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop20">
-                                <img src="Twenty.jpeg">
-                            </a>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop20" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Twenty.jpeg" style="width:100%;height: auto">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class = "row">
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop21">
-                                <img src="Twentyone.jpeg">
-                            </a>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop21" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Twentyone.jpeg" style="width:100%;height: auto">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                        </div>
-
-                        <div class = "col-md-3">
-                            <a href = "#" data-toggle="modal" data-target="#staticBackdrop22">
-                                <img src="Twentytwo.jpeg">
-                            </a>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop22" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <img src="Twentytwo.jpeg" style="width:100%;height: auto">
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class= "container-fluid">
-                     <h1 id = "vg">Video Gallery</h1>
-                    <div class = "video-gal container-fluid">
-                        <div class="row">
+                        <div class = "row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
                             <div class = "col-md-3">
-                                <iframe
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal21">
+                                            <img src="images/Twentyone.jpeg" width = "300px" height="300px">
+                                        </a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal21" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Twentyone.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal22">
+                                            <img src="images/Twentytwo.jpeg" width = "300px" height="300px">
+                                        </a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal22" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Twentytwo.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class = "col-md-3">
+                                <div class = "img-responsive">
+                                    <div class = "img-gallery">
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal23">
+                                            <img src="images/Twentythree.jpeg" width = "300px" height="300px">
+                                        </a>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal23" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <img src="images/Twentythree.jpeg" style="width : 100%;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section id = "video-gallery">
+                <h1 style="text-align : center; margin-top : 30px;">Video Gallery</h1>
+                   <div class= "container-fluid" style="margin-top: 50px;">
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"
                                 src="https://youtube.com/embed/Rm5_EB9G7wM" allowfullscreen>
                                 </iframe>
                             </div>
-                            <div class = "col-md-3">
-                                <iframe 
+                        </div>
+
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"
                                 src="https://youtube.com/embed/FiM4Bmgu9ho" allowfullscreen>
                                 </iframe>
                             </div>
-                            <div class = "col-md-3">
-                                <iframe                                          
+                        </div>
+
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"                                         
                                 src="https://youtube.com/embed/tRvoZOx70oc" allowfullscreen> 
                                 </iframe>
                             </div>
-                            <div class = "col-md-3">
-                                <iframe 
+                        </div>
+
+                        
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"
                                   src="https://youtube.com/embed/NvJ1R5acvbo" allowfullscreen>
                                 </iframe>
                             </div>
                         </div>
+                  
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"                          
+                                src="https://youtube.com/embed/m6bs-xw_PPY" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
 
-                             <div class="row">
-                                <div class = "col-md-3">
-                                    <iframe                           
-                                    src="https://youtube.com/embed/m6bs-xw_PPY" allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <div class = "col-md-3">
-                                    <iframe 
-                                    src="https://youtube.com/embed/m6bs-xw_PPY" allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <div class = "col-md-3">
-                                    <iframe 
-                                    src="https://youtube.com/embed/GoO3ghCpcv0" allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <div class = "col-md-3">
-                                    <iframe 
-                                      src="https://youtube.com/embed/QnNNl35bu0Y" allowfullscreen>
-                                    </iframe>
-                                </div>
+                        <div class = "responsive">
+                            <div class = "gallery"> 
+                                <iframe width="300" height="300"
+                                src="https://youtube.com/embed/m6bs-xw_PPY" allowfullscreen>
+                                </iframe>
                             </div>
+                        </div>
+                       
+                       <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"
+                                src="https://youtube.com/embed/GoO3ghCpcv0" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
                         
-                            <div class = "row">
-                                <div class = "col-md-3">
-                                    <iframe 
-                                    src="https://youtube.com/embed/daHr5O_IqIE" allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <div class = "col-md-3">
-                                    <iframe 
-                                    src="https://youtube.com/embed/daHr5O_IqIE" allowfullscreen>
-                                    </iframe>
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"
+                                  src="https://youtube.com/embed/QnNNl35bu0Y" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>                                   
+            
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"
+                                src="https://youtube.com/embed/daHr5O_IqIE" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"
+                                src="https://youtube.com/embed/daHr5O_IqIE" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                      
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"
+                                src="https://youtube.com/embed/Rc_0LLP_pQQ" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"
+                                  src="https://youtube.com/embed/gF_mg110NZk" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"
+                                   src="https://youtube.com/embed/mCq62au9LoU" allowfullscreen> 
+                                </iframe>
+                            </div>
+                        </div>
+                    
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"
+                                  src="https://youtube.com/embed/pICZMltVJCo" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
 
-                                </div>
-                                <div class = "col-md-3">
-                                    <iframe 
-                                    src="https://youtube.com/embed/Rc_0LLP_pQQ" allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <div class = "col-md-3">
-                                    <iframe 
-                                      src="https://youtube.com/embed/gF_mg110NZk" allowfullscreen>
-                                    </iframe>
-                                </div>
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe  width="300" height="300"
+                                src="https://youtube.com/embed/jajdoR8ocgk" allowfullscreen>
+                                </iframe>
                             </div>
-                            
-                            <div class = "row">
-                                <div class = "col-md-3">
-                                    <iframe 
-                                       src="https://youtube.com/embed/mCq62au9LoU" allowfullscreen> 
-                                    </iframe>
-                                </div>
-                                <div class = "col-md-3">
-                                    <iframe  
-                                      src="https://youtube.com/embed/pICZMltVJCo" allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <div class = "col-md-3">
-                                    <iframe  
-                                    src="https://youtube.com/embed/jajdoR8ocgk" allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <div class = "col-md-3">
-                                    <iframe 
-                                      src="https://youtube.com/embed/wIen4NL3oOA" allowfullscreen>
-                                    </iframe>
-                                </div>
+                        </div>
+                       
+                       <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"
+                                  src="https://youtube.com/embed/wIen4NL3oOA" allowfullscreen>
+                                </iframe>
                             </div>
+                        </div>
+                    
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"
+                                  src="https://youtube.com/embed/ocgxhtvAy2c" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                       
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"
+                                  src="https://youtube.com/embed/L5uFgRvs0NY" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
                         
-                            <div class = "row">
-                                <div class = "col-md-3">
-                                    <iframe 
-                                      src="https://youtube.com/embed/ocgxhtvAy2c" allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <div class = "col-md-3">
-                                    <iframe 
-                                      src="https://youtube.com/embed/L5uFgRvs0NY" allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <div class = "col-md-3">
-                                    <iframe 
-                                    src="https://youtube.com/embed/AOB8wyjCMNQ" allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <div class = "col-md-3">
-                                    <iframe 
-                                     src="https://youtube.com/embed/Cz71_dimIeA" allowfullscreen>
-                                    </iframe>
-                                </div>
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"
+                                src="https://youtube.com/embed/AOB8wyjCMNQ" allowfullscreen>
+                                </iframe>
                             </div>
-                            
-                            <div class = "row">
-                                <div class = "col-md-3">
-                                    <iframe 
-                                       src="https://youtube.com/embed/L5uFgRvs0NY" allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <div class = "col-md-3">
-                                    <iframe 
-                                    src="https://youtube.com/embed/AOB8wyjCMNQ" allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <div class = "col-md-3">
-                                    <iframe 
-                                     src="https://youtube.com/embed/EdPFFB1iFoU" allowfullscreen>
-                                    </iframe>
-                                </div>
+                        </div>
+                        
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"
+                                 src="https://youtube.com/embed/Cz71_dimIeA" allowfullscreen>
+                                </iframe>
                             </div>
+                        </div>
+                
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"
+                                   src="https://youtube.com/embed/L5uFgRvs0NY" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300"
+                                src="https://youtube.com/embed/AOB8wyjCMNQ" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        
+                        <div class = "responsive">
+                            <div class = "gallery">
+                                <iframe width="300" height="300" 
+                                src="https://youtube.com/embed/EdPFFB1iFoU" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
                     </div>
-                </div> 
             </section>
 
             <section id = "contact-us" style= "margin-top: 30px;">
@@ -1026,8 +1117,7 @@
                           <div class="item">
                             <i class="icon fas fa-envelope"></i>
                            <a href="mailto:mohammedalirazvi78692@gmail.com">mohammedalirazvi78692@gmail.com</a> 
-                           <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:mazhareaalahazratfoundation@gmail.comm">mazhareaalahazratfoundation@gmail.com</a>
+                           <a href="mailto:mohammedalirazvi78692@gmail.com">mazhareaalahazratfoundation@gmail.com</a> 
                           </div>
                           <div class="item">
                             <i class="icon fas fa-home"></i>
