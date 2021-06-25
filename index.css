@@ -240,7 +240,9 @@ height : auto;
 
 @media (max-width : 400px){
 	.navbar .navbar-brand a{
-		font-size : 18px;
+		font-size : 16px;
+		font-weight : 600;
+		color : green;
 	}
 
 }
