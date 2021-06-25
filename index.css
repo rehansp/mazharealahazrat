@@ -23,7 +23,7 @@ body{
 
 .navbar .navbar-brand{
 	margin-top: 20px;
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 600;
 	color : green;
 }
@@ -233,29 +233,8 @@ body{
 }
 
 @media (max-width : 400px){
-	.navbar-toggler{
-		display: flex;
-	}
-	.navbar{
-		width : 100%;
-	}
-
-	.navbar{
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.navbar ul{
-		width : 100%;
-		flex-direction: column;
-	}
-
-	.navbar ul li{
-		text-align: center;
-	}
-
-	.navbar ul li a{
-		padding: .5rem 1rem;
+	.navbar .navbar-brand a{
+		font-size : 18px;
 	}
 
 }
