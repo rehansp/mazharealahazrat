@@ -11,16 +11,19 @@ nav{
 	top: 0;
 	width:100%;
 	z-index: 1;
-	background-color: #0f0f0f;
+	background-color: #ffffff;
 }
 nav ul{
 	display: flex;
 }
 .active{
     background-color: green;
-    color:#ffffff;
+    color:#000000;
 	box-shadow: 5px 10px 30px rgba(0, 128, 0, 0.411);
 	transition: all ease 0.2s;
+}
+.menu li{
+    list-style: none;
 }
 nav ul li a{
     font-family: calibri;
@@ -31,15 +34,16 @@ nav ul li a{
 	display: flex;
 	font-size: 0.8rem;
 	text-transform: uppercase;
-	font-weight: 500;
-	color:#ffffff;
+	font-weight: 600;
+	color:#000000;
     letter-spacing: 1px;
     border-radius: 3px;
     transition: 0.2s ease-in-out;
+    text-decoration: none;
 }
 nav ul li a:hover{
 	background-color: green;
-    color:#ffffff;
+    color:#000000;
 	box-shadow: 5px 10px 30px rgba(0, 128, 0, 0.411);
 	transition: all ease 0.2s;
     text-decoration: none;
@@ -250,7 +254,7 @@ height : auto;
             position:absolute;
             top:65px;
             left:0px;
-            background-color:#000000;
+            background-color:#ffffff;
             border-bottom:4px solid green;
             width:100%;
             padding:0px;
@@ -258,6 +262,7 @@ height : auto;
         }
         .menu li{
             width:100%;
+            list-style: none;
         }
         nav .menu li a{
             width:100%;
@@ -267,6 +272,7 @@ height : auto;
             margin:0px;
             padding: 25px;
             border:1px solid rgba(0,128,0,0.03);
+            list-style: none ;
         }
         nav .menu-icon{
             cursor:pointer;
@@ -276,7 +282,7 @@ height : auto;
             user-select: none;
         }
         nav .menu-icon .nav-icon{
-            background-color:#ffffff;
+            background-color:#000000;
             display:block;
             height:2px;
             position:relative;
@@ -285,7 +291,7 @@ height : auto;
         }
         nav .menu-icon .nav-icon:before,
         nav .menu-icon .nav-icon:after{
-            background:rgb(255, 255, 255);
+            background:rgb(0, 0, 0);
             content:'';
             display:block;
             height:100%;
@@ -318,12 +324,22 @@ height : auto;
         }
 }
 
-@media only screen and (max-width : 700px){
-    #about .container-fluid{
-        display :flex;
-        flex-direction: column;
-        flex-grow: 1;
+@media screen and (min-width: 992px){
+    #about-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
+    .about-left{
+        position: relative;
+    }
+    .about-left-content{
+        position: absolute;
+        right: -50px;
+    }
+}
+
+@media only screen and (max-width : 700px){
+
 	.responsive{
 		width : 50%;
 		margin : 6px 0;
