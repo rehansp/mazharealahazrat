@@ -1,21 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-*{
-	margin : 0px;
-	padding : 0px;
-	box-sizing: border-box;
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.336);
+	position: fixed;
+	left: 0;
+	top: 0;
+	width:100%;
+	z-index: 1;
+	background-color: #0f0f0f;
+}
+nav ul{
+	display: flex;
+}
+.active{
+    background-color: green;
+    color:#ffffff;
+	box-shadow: 5px 10px 30px rgba(0, 128, 0, 0.411);
+	transition: all ease 0.2s;
+}
+nav ul li a{
+    font-family: calibri;
+	height:40px;
+	line-height: 43px;
+	margin: 3px;
+	padding: 0px 22px;
+	display: flex;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color:#ffffff;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.2s ease-in-out;
+}
+nav ul li a:hover{
+	background-color: green;
+    color:#ffffff;
+	box-shadow: 5px 10px 30px rgba(0, 128, 0, 0.411);
+	transition: all ease 0.2s;
+    text-decoration: none;
+}
+nav .menu-btn,
+.menu-icon{
+		display:none;
+	}
+
+#slider {
+    margin-top: 30px;
 }
 
-body{
-	font-family: sans-serif;
-	min-height: 100vh;
+.carouselExampleIndicators{
+    padding: 1rem;
+}
+.carousel-item img{
+    max-width: 100%;
 }
 
-.nav{
-width : max-width : 100%;
-	height : auto;
-}
 .float{
     position:fixed;
     width:60px;
@@ -31,58 +75,169 @@ width : max-width : 100%;
     z-index:100;
 }
 
-nav{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.336);
-	position: fixed;
-	left: 0;
-	top: 0;
-	width:100%;
-	z-index: 1;
-	background-color: #0f0f0f;
+.my-float{
+    margin-top:16px;
 }
 
-nav ul{
-	display: flex;
+#about{
+	margin-top: 50px;
 }
 
-.active{
-    background-color: green;
-    color:#ffffff;
-    box-shadow: 5px 10px 30px rgba(0, 128, 0, 0.411);
-    transition: all ease 0.2s;
+#about .Heading{
+	
+	text-align: center;
 }
 
-nav ul li a{
-    font-family: calibri;
-    height:40px;
-    line-height: 43px;
-    margin: 3px;
-    padding: 0px 22px;
+#about img{
+	margin-top: 35px;
+	max-width: 100%; 
+	height: auto;
+}
+.about-me{
+	font-weight: 600;
+}
+
+#importance-of-qurbani {
+	padding: 1rem;
+}
+
+#importance-of-qurbani h1{
+	text-align: center;
+}
+
+#importance-of-qurbani h1,p,ul{
+	margin-top: 30px;
+}
+
+.responsive-img
+{
+max-width : 100%;
+height : auto;
+}
+
+.image-gallery{
+	padding: 80px 0;
+}
+
+.image-gallery img{
+	max-width: 100%;
+	padding: 15px;
+	width: 100%;
+	background-color: #ffffff;	
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.img-responsive{
+	width: 350px;
+	height: auto;
+	margin-top: 10px;
+	padding-left: 1rem;
+
+}
+
+.gallery{
+	border: 1px solid #ccc;
+}
+
+.gallery iframe{
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	padding: 15px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+
+.responsive{
+	padding: 0 6px;
+	float : left;
+	width : 25%;
+}
+
+#contact-us .contact-page{
+    width: 100%;
+    max-width: 1400px;
+    padding: 50px;
     display: flex;
-    font-size: 0.8rem;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #contact-us h2{
+    width: 100%;
+    margin-bottom: 80px;
     text-transform: uppercase;
-    font-weight: 500;
-    color:#ffffff;
-    letter-spacing: 1px;
-    border-radius: 3px;
-    transition: 0.2s ease-in-out;
-}
-
-nav ul li a:hover{
+    color: #000;
+    font-size: 60px;
+  }
+  
+  #contact-us .contact-info, .contact-form{
+    flex: 1;
+  }
+  
+  #contact-us .item{
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #000;
+  }
+  
+  #contact-us .icon{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     background-color: green;
-    color:#ffffff;
-    box-shadow: 5px 10px 30px rgba(0, 128, 0, 0.411);
-    transition: all ease 0.2s;
-    text-decoration: none;
-}
-
-nav .menu-btn,.menu-icon{
-    display:none;
-}
-
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  
+  #contact-us .contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #contact-us .textb{
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    background-color: #222;
+    border: none;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  #contact-us textarea{
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    padding: 12px;
+    background-color: #222;
+    border: none;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  #contact-us .btn{
+    width: 120px;
+    height: 40px;
+    margin-left: auto;
+    background-color: #3494db;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid #3494db;
+    transition: .3s linear;
+  }
+  
+  #contact-us .btn:hover{
+    background-color: transparent;
+    color: #3494db;
+  }
 @media(max-width:1100px){.menu-icon{
     display:block;}
         nav{
@@ -163,258 +318,12 @@ nav .menu-btn,.menu-icon{
         }
 }
 
-.my-float{
-    margin-top:16px;
-}
-
-#slider {
-	margin-top: 30px;
-}
-
-.carouselExampleIndicators{
-	padding: 1rem;
-}
-.carousel-item img{
-	max-width: 100%;
-}
-
-#about{
-	margin-top: 50px;
-}
-
-#about .Heading{
-	
-	text-align: center;
-}
-
-#about img{
-	margin-top: 35px;
-	max-width: 100%; 
-	height: auto;
-}
-.about-me{
-	font-weight: 600;
-}
-
-#importance-of-qurbani {
-	padding: 1rem;
-}
-
-#importance-of-qurbani h1{
-	text-align: center;
-}
-
-
-#importance-of-qurbani h1,p,ul{
-	margin-top: 30px;
-}
-
-.responsive-img
-{
-max-width : 100%;
-height : auto;
-}
-
-.image-gallery{
-	padding: 80px 0;
-}
-
-.image-gallery img{
-	max-width: 100%;
-	padding: 15px;
-	width: 100%;
-	background-color: #ffffff;	
-	box-shadow: 0 0 15px rgba(0,0,0,0.3);
-}
-
-.img-responsive{
-	width: 350px;
-	height: auto;
-	margin-top: 10px;
-	padding-left: 1rem;
-
-} 	
-
-.gallery{
-	border: 1px solid #ccc;
-}
-
-.gallery iframe{
-	max-width: 100%;
-	width: 100%;
-	height: auto;
-	padding: 15px;
-	box-shadow: 0 0 15px rgba(0,0,0,0.3);
-	cursor: pointer;
-}
-
-.responsive{
-	padding: 0 6px;
-	float : left;
-	width : 25%;
-}
-
-#contact-us .contact-page{
-  width: 100%;
-  max-width: 1400px;
-  padding: 50px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-#contact-us h2{
-  width: 100%;
-  margin-bottom: 80px;
-  text-transform: uppercase;
-  color: #000;
-  font-size: 60px;
-}
-
-#contact-us .contact-info, .contact-form{
-  flex: 1;
-}
-
-#contact-us .item{
-  margin-bottom: 24px;
-  font-size: 16px;
-  color: #000;
-}
-
-#contact-us .icon{
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  background-color: green;
-  text-align: center;
-  color: #fff;
-  border-radius: 50%;
-  margin-right: 16px;
-}
-
-#contact-us .contact-form{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-#contact-us .textb{
-  width: calc(50% - 10px);
-  height: 50px;
-  padding: 12px;
-  background-color: #222;
-  border: none;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-#contact-us textarea{
-  width: 100%;
-  min-height: 200px;
-  max-height: 400px;
-  resize: vertical;
-  padding: 12px;
-  background-color: #222;
-  border: none;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-#contact-us .btn{
-  width: 120px;
-  height: 40px;
-  margin-left: auto;
-  background-color: #3494db;
-  border: none;
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: 2px solid #3494db;
-  transition: .3s linear;
-}
-
-#contact-us .btn:hover{
-  background-color: transparent;
-  color: #3494db;
-}
-
-@media (max-width : 400px){
-
-@media screen and (max-width: 980px){
- #contact-us .contact-page{
-    max-width: 800px;
-  }
- #contact-us h2{
-    font-size: 40px;
-    margin-bottom: 40px;
-  }
-
-#contact-us .contact-info, .contact-form{
-    flex: 100%;
-    margin-bottom: 30px;
-  }
-#contact-us  .textb{
-    width: 100%;
-  }
-}
-
-
-@media only screen and (max-width : 600px){
-	#slider{
-		margin-top: 30px;
-	}
-	
-	#about{
-		flex: 100%;
-		display: flex;
-		flex-direction: column;
-	}
-
-	}
-	#about .Heading{
-		font-size: 20px;
-		text-align: center;
-		font-weight: 600;
-	}
-
-#be-naziramal{
-	margin-top: 20px;
-	padding: 1rem;
-}
-
-#be-naziramal img{
-	margin-top: 20px;
-}
-#importance-of-qurbani h1{
-		font-size: 25px;
-		text-align: center;
-		font-weight: 600;
-	}
-
-#importance-of-qurbani ul{
-		margin-left: 30px;
-	}
-
-
-	#sticky-footer{
-		min-width: 600px;
-		width:  33%;
-		float: left;
-		display:block;
-    color:black; 
-    padding:0px;
-    margin: 0px;
-	} 
-}
-
-
 @media only screen and (max-width : 700px){
-	.about-img img{
-		width : 50%;
-		margin : 6px 0;
-	}
-
+    #about .container-fluid{
+        display :flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
 	.responsive{
 		width : 50%;
 		margin : 6px 0;
