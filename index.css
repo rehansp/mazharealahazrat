@@ -85,6 +85,28 @@ nav .menu-btn,
 
 #about{
 	margin-top: 50px;
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-img{
+    margin-top: 50px;
+    flex : 1 0 0;
+
+}
+
+.about-me{
+    font-weight: 600;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex : 2 0 0;
+    flex-wrap: wrap;
 }
 
 #about .Heading{
@@ -92,14 +114,6 @@ nav .menu-btn,
 	text-align: center;
 }
 
-#about img{
-	margin-top: 35px;
-	max-width: 100%; 
-	height: auto;
-}
-.about-me{
-	font-weight: 600;
-}
 
 #importance-of-qurbani {
 	padding: 1rem;
@@ -324,19 +338,6 @@ height : auto;
         }
 }
 
-@media screen and (min-width: 992px){
-    #about-wrapper{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .about-left{
-        position: relative;
-    }
-    .about-left-content{
-        position: absolute;
-        right: -50px;
-    }
-}
 
 @media only screen and (max-width : 700px){
 
@@ -351,14 +352,41 @@ height : auto;
 }
 
 @media only screen and (max-width : 500px){
-	.about-img img{
-		width : 100%;
-	}
+	/* about section */
+    .about-img{
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin-top: 20px;
+    }
+    .Heading{
+        font-size: 18px;
+        font-weight: 900;
+        text-align: center;
+        padding: 1rem;
+    }
 
-	.responsive{
+    /* gallery */
+    .responsive{
 		width : 100%;
 	}
 	.img-responsive{
 		width : 100%;
-	}
+    }
+
+    /* importance of qurbani */
+    #importance-of-qurbani h1{
+            font-size : 20px;
+            font-weight: 900;
+            
+        }
+        #importance-of-qurbani p, ul, li{
+            font-weight: 600;
+            padding: 0.5rem;
+        }
+
+        #importance-of-qurbani ul li{
+            margin-bottom: -16px;
+        }
 }
