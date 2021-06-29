@@ -358,6 +358,7 @@ height : auto;
         justify-content: center;
         align-items: center;
         padding: 1rem;
+	padding-right: 10px;
         margin-top: 20px;
     }
     .Heading{
