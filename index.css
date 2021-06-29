@@ -356,7 +356,7 @@ height : auto;
     .about-img{
         max-width: 100%;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         padding: 1rem;
 	padding-right: 10px;
         margin-top: 20px;
