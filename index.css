@@ -354,6 +354,7 @@ height : auto;
 @media only screen and (max-width : 500px){
 	/* about section */
     .about-img{
+	display : flex;
         max-width: 100%;
 	height : auto;
         justify-content: center;
