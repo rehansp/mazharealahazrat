@@ -356,7 +356,7 @@ height : auto;
     .about-img{
 	width : 70%;
 	height : auto;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: left;
         padding: 1rem;
 	padding-right: 10px;
