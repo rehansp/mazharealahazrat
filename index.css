@@ -355,7 +355,7 @@ height : auto;
 	/* about section */
     .about-img{
 	display : flex;
-        max-width: 100%;
+        max-width: 70%;
 	height : auto;
         justify-content: center;
         align-items: left;
