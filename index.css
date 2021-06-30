@@ -138,7 +138,6 @@ height : auto;
 }
 
 .image-gallery img{
-	max-width: 100%;
 	padding: 15px;
 	width: 100%;
 	background-color: #ffffff;	
@@ -353,28 +352,48 @@ height : auto;
 
 @media only screen and (max-width : 500px){
 	/* about section */
-    .about-img{
-	display : flex;
-        max-width: 70%;
-	height : auto;
+    .logo{
+        flex: 1;        
+    }
+    .about-img{     
+        display: flex;
+        width: 100%;
+        border: 0;
+        overflow: hidden;
+        align-items: stretch;
+        flex-wrap: wrap;
+        height: auto;
+        flex : 1;
         justify-content: center;
-        align-items: left;
-        padding: 1.5rem;
+        align-items: center;
+        padding: 1rem;
         margin-top: 20px;
     }
     .Heading{
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 900;
         text-align: center;
         padding: 1rem;
+        flex : 1;
     }
-	
+
+    .about-me{
+        text-align: justify;
+    }
+
+    #importance-of-qurbani p, ul li{
+        text-align: justify;
+    }
+
     /* gallery */
     .responsive{
 		width : 100%;
 	}
 	.img-responsive{
 		width : 100%;
+        padding: auto;
+        margin-right: 1.5rem;
+        overflow: hidden;
     }
 
     /* importance of qurbani */
@@ -382,13 +401,24 @@ height : auto;
             font-size : 20px;
             font-weight: 900;
             
-        }
-        #importance-of-qurbani p, ul, li{
-            font-weight: 600;
-            padding: 0.5rem;
+    }
+    
+    #importance-of-qurbani p, ul, li{
+        font-weight: 600;
+        padding: 0.5rem;
         }
 
-        #importance-of-qurbani ul li{
-            margin-bottom: -16px;
-        }
+    #importance-of-qurbani ul li{
+        margin-bottom: -16px;
+    }
+        
+    #contact-us .contact-page h2{
+    font-size : 20px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    flex : 1;
+    text-align: justify;
+}
+
 }
