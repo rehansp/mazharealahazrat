@@ -352,6 +352,9 @@ height : auto;
 
 @media only screen and (max-width : 500px){
 	/* about section */
+     #slider {
+	overflow : hidden;
+	}
     .logo{
         flex: 1;        
     }
