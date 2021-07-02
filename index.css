@@ -411,7 +411,13 @@ height : auto;
     #importance-of-qurbani ul li{
         margin-bottom: -16px;
     }
-        
+    
+    #bank-info h2{
+        font-weight: bold;
+        color : green;
+        font-size : 17px;
+    }
+	
     #contact-us .contact-page h2{
     font-size : 20px;
     line-height: 20px;
