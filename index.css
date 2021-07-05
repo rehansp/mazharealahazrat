@@ -55,6 +55,7 @@ nav .menu-btn,
 
 #slider {
     margin-top: 30px;
+    padding-top: 40px;
 }
 
 .carouselExampleIndicators{
@@ -107,6 +108,9 @@ nav .menu-btn,
     flex-direction: column;
     flex : 2 0 0;
     flex-wrap: wrap;
+    text-align: justify;
+    margin-right: 10px;
+
 }
 
 #about .Heading{
@@ -127,6 +131,11 @@ nav .menu-btn,
 	margin-top: 30px;
 }
 
+#importance-of-qurbani p,ul,li{
+    font-weight: 600;
+    text-align: justify;
+}
+
 .responsive-img
 {
 max-width : 100%;
@@ -134,22 +143,23 @@ height : auto;
 }
 
 .image-gallery{
-	padding: 80px 0;
+	border: 1px solid #ccc;
 }
 
 .image-gallery img{
+	max-width: 100%;
+    margin-top: 10px;
+	width: 100vw;
+	height: 50vh;
 	padding: 15px;
-	width: 100%;
-	background-color: #ffffff;	
 	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	cursor: pointer;
 }
 
 .img-responsive{
-	width: 350px;
-	height: auto;
-	margin-top: 10px;
-	padding-left: 1rem;
-
+    padding: 0 6px;
+    width: 350px;
+    height: auto;
 }
 
 .gallery{
@@ -354,6 +364,8 @@ height : auto;
 	/* about section */
      #slider {
 	overflow : hidden;
+    padding-top : 15px;
+    margin-top: 0;
 	}
     .logo{
         flex: 1;        
@@ -420,16 +432,17 @@ height : auto;
         color : green;
         font-size : 17px;
     }
-	
+
     #contact-us .contact-page h2{
-    font-size : 20px;
-    line-height: 20px;
-    font-weight: 600;
-    font-family: sans-serif;
-    flex : 1;
-    text-align: justify;
-}
-   #contact-us .contact-page .contact-info .item p {
+        font-size : 20px;
         line-height: 20px;
-   }
+        font-weight: 600;
+        font-family: sans-serif;
+        flex : 1;
+        text-align: justify;
+    }
+       #contact-us .contact-page .contact-info .item p {
+            line-height: 20px;
+       }
+	
 }
