@@ -402,13 +402,17 @@ height : auto;
 
     /* gallery */
     .responsive{
-		width : 100%;
-	}
-	.img-responsive{
-		width : 100%;
+	width : 100%;
+      }
+   .img-responsive{
+	width : 100%;
         padding: auto;
         margin-right: 1.5rem;
         overflow: hidden;
+    }
+    .image-gallery img{
+        width: 100vw;
+	    height: 50vh;
     }
 
     /* importance of qurbani */
