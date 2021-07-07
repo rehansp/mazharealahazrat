@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* min-height: 100vh;
+    font-family: sans-serif; */
+    display: flex;
+    flex-direction: column;
+}
 nav{
 	display: flex;
 	justify-content: space-around;
