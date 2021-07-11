@@ -484,8 +484,8 @@ nav .menu-btn,
 }
 
 @media only screen and (max-width : 500px){
-     nav .logo{
-	     font-size : 18px;
+      .logo{
+	     font-size : 15px;
 	     font-weight : 600;
 	     color : green;
 	}
