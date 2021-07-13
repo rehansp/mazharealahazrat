@@ -13,6 +13,51 @@ body{
     display: flex; 
     flex-direction: column;
 }
+
+nav{
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    margin: auto;
+}
+
+nav .navbar-brand{
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style-type: none;
+    line-height: 30px;
+    display: inline-flex;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color : #000000;
+    padding: 1rem;
+    margin-right: 30px;
+}
+
+.active{
+    color : green;
+}
+
+nav ul li a:hover{
+    color : #fff;
+    background-color: green;
+    padding: 1rem;  
+}
+
 #slider {
     margin-top: 30px;
     padding-top: 40px;
@@ -351,11 +396,29 @@ body{
 }
 
 @media only screen and (max-width : 500px){
-      .logo{
-	     font-size : 15px;
-	     font-weight : 600;
-	     color : green;
-	}
+      nav .navbar-brand{
+        font-size: 15px;
+        padding: 1rem;
+        line-height: 15px;
+        text-align: justify;
+        flex: 1;
+    }
+
+    nav .navbar-toggler-icon{
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    nav .navbar-toggler{
+        margin-top: 20px;
+    }
+
+    nav ul li a:hover{
+        padding: 1rem;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: justify;
+    }
 	/* about section */
      #slider {
 	overflow : hidden;
