@@ -27,6 +27,7 @@ nav .navbar-brand{
     font-weight: 900;
     line-height: 30px;
     padding-left: 20px;
+    text-transform : uppercase;		
 }
 
 nav ul{
