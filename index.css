@@ -400,7 +400,7 @@ nav ul li a:hover{
       nav .navbar-brand{
         font-size: 15px;
         line-height: 15px;
-        text-align: flex-start;
+        text-align: justify
         flex: 1;
 	text-transform: uppercase;
     }
