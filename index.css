@@ -403,12 +403,13 @@ nav ul li a:hover{
         line-height: 15px;
         text-align: justify;
         flex: 1;
-	text-transform: capitalize;
+	text-transform: uppercase;
     }
 
     nav .navbar-toggler-icon{
         font-size: 14px;
         line-height: 15px;
+	margin-right: 10px;
     }
 
     nav .navbar-toggler{
